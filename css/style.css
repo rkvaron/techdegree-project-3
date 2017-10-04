@@ -26,7 +26,7 @@ h1 {
 	padding-bottom: .4em;
 }
 
-h2, 
+h2,
 fieldset {
 	color: #444;
 	font-size: 1.15em;
@@ -66,7 +66,7 @@ fieldset {
 	border-bottom: 2px solid #444;
 }
 legend {
-	padding-top: 1.5em;
+	padding: 1.5em 0 1em 0;
 	font-weight: bold;
 }
 
@@ -75,7 +75,9 @@ fieldset label {
 	color: #999;
 }
 
-input {
+input,
+textarea,
+button {
 	background-color: #eff0f1;
 	border-radius: 5px;
 	line-height: 2.5;
@@ -85,9 +87,10 @@ input {
 	text-indent: 10px;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
 	outline-color: transparent;
-  	outline-style: none;
+  outline-style: none;
 	border: solid 2px navy;
 
 }
@@ -96,11 +99,36 @@ input:focus {
 	width: 40%;
 }
 
-legend 
+input[type="checkbox"],
+input[type="radio"] {
+	width: 25px;
+	margin-right: 10px;
+}
 
-/*form:not(:first-child) {
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  font-weight: bold;
+}
+.newsletter {
 	border-bottom: none;
-}*/
+}
+
+button {
+	width: 100%;
+	background-color: #52bab3;
+	color: #fff;
+	font-size: 1.2em;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0 0 20px 0;
+}
+footer {
+	text-align: center;
+	font-style: italic;
+	color: #999;
+	font-size: .85em;
+	padding-bottom: 60px;
+}
 
 
 /* =================================
