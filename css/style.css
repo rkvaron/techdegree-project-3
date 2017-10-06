@@ -92,6 +92,7 @@ select {
 	margin: 10px 0;
 	border: none;
 	text-indent: 10px;
+	transition: background-color 1s;
 }
 
 input:focus,
@@ -100,6 +101,7 @@ select:focus {
 	outline-color: transparent;
   outline-style: none;
 	border: solid 2px navy;
+	background-color: #77dcd5;
 }
 
 select {
@@ -123,11 +125,11 @@ input[type="radio"]:checked + label {
 .newsletter {
 	border-bottom: none;
 }
-input::placeholder {
+input[placeholder*="Required"] {
 	font-style: italic;
 	font-size: .85em;
 	text-align: right;
-	padding-right: 30px;
+	padding-right: 35px;
 }
 
 button {
