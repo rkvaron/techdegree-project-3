@@ -131,6 +131,12 @@ input[placeholder*="Required"] {
 	text-align: right;
 	padding-right: 35px;
 }
+/*- the following 5 lines of code changes the placeholder="required" text to look like the rest of the input */
+input:not(:placeholder-shown) {
+    text-align: left;
+    font-size: 16px;
+    font-style: normal;
+}
 
 button {
 	width: 100%;
