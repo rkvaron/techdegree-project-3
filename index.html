@@ -46,7 +46,7 @@
         <div class="form-group">
   	 			<label for="state">State</label>
   	 			<select id="state" name="user_state">
-              <option value="">Choose State</option>
+              <option selected hidden disabled>Choose State</option>
               <option value="AL">Alabama</option>
             	<option value="AK">Alaska</option>
             	<option value="AZ">Arizona</option>
@@ -109,14 +109,16 @@
 	 			<legend>Newsletter</legend>
 				<label>Select the newsletter you would like to receive</label><br>
 
-		 			<input type="checkbox" id="html_pref" name="user_newsletter_pref" value="html_pref"><label for="html_pref" class="light">HTML News</label><br>
+<!-- For checkboxes (multiple sections are possible)vyou want unique name attributes, because if this was hooked up to a server, that is how the server would be able to differentiate between them.  -->
+		 			<input type="checkbox" id="html_pref" name="user_html_pref" value="html_pref"><label for="html_pref" class="light">HTML News</label><br>
 
-		 			<input type="checkbox" id="css_pref" name="user_newsletter_pref" value="css_pref"><label for="css_pref" class="light">CSS News</label><br>
+		 			<input type="checkbox" id="css_pref" name="user_css_pref" value="css_pref"><label for="css_pref" class="light">CSS News</label><br>
 
-		 			<input type="checkbox" id="js_pref" name="user_newsletter_pref" value="javascript_pref"><label for="js_pref" class="light">Javascript News</label><br>
+		 			<input type="checkbox" id="js_pref" name="user_js_pref" value="js_pref"><label for="js_pref" class="light">Javascript News</label><br>
 
         <br>
         <label>Newsletter Format</label><br>
+        <!-- You want identical name attributes for radio buttons, where only one selection is possible-->
 
 		 			<input type="radio" id="html_format" value="html_format" name="user_newsletter_format"><label for="html_format" class="light">HTML</label><br>
 
