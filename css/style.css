@@ -76,7 +76,8 @@ legend {
 	font-weight: bold;
 }
 
-fieldset label {
+fieldset label,
+h4 {
 	font-size: .75em;
 	color: #999;
 }
