@@ -80,6 +80,7 @@ fieldset label,
 h4 {
 	font-size: .75em;
 	color: #999;
+	margin: 0;
 }
 
 input,
